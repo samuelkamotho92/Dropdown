@@ -2,31 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./index.css" >
   <script src="https://kit.fontawesome.com/0adfa69bb8.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   <div class="Navbar">
-    <div class="" style="margin-right: 30px;">
-      Snap
-    </div>
     <nav class="navbar-items">
-     <div class="navbar-links">
+     <div>
       <ul class="nav-list">
+        <li class="logo">
+<a href="#Snap">Snap</a>
+        </li>
         <li class="dropdown">
           <a href="#">Features</a>
           <ul class="dropdown-list">
@@ -39,9 +32,9 @@
         <li class="dropdown">
           <a href="#">Company</a>
           <ul class="dropdown-list">
-            <li><a href="#">History</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><p><a>History</a></p></li>
+            <li><p><a>Our Team</a></p></li>
+            <li><p><a>Blog</a></p></li>
           </ul>
         </li>
         <li><a href="">Careers</a></li>
@@ -93,23 +86,22 @@
       <div class="Navbar__Link">
         <button><a href="">Register</a></button>
       </div>
-      <!-- <div class="Navbar__Link Navbar__Link-toggle" >
-        <i class="fas fa-bars" onclick="openSidemenu()"></i>
-      </div> -->
     </div>
   </div>
 <div class="mainPage">
 <div class="theme">
   <div>
-    <h3 class="title">Make remote work</h3>
+    <h3 class="title">Make <br /> remote work</h3>
     <p class="details">
       Get your team in sync, no matter your location.<br> Streamline processes, 
       create team rituals, and <br> watch productivity soar.
     </p>
   </div>
   <div>
-    <button style="padding: 10px;text-align: center;cursor: pointer;margin: 10px 0px;">
+    <button style="padding: 10px;text-align: center;cursor: pointer;margin: 10px 0px; border-radius: 10px;">
+    <a>
       Learn More
+    </a>
     </button>
   </div>
 <div class="sponsors">
@@ -139,7 +131,6 @@ xmlns="http://www.w3.org/2000/svg">
 </div>
 </div>
 </div>
-
 <div class="banner">
 <img src="./images/image-hero-desktop.png" alt="" height="400px" width="100%" >
 </div>

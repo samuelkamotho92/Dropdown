@@ -1,26 +1,22 @@
 .Navbar {
-    display: flex;
-    background-color: rgb(244, 237, 237);
     padding: 20px;
   }
-  .navbar-items{
-    display: flex;
+  .logo a{
+font-weight: bolder;
+font-size: 32px;
+text-decoration: none;
+color: black;
   }
-  .Navbar__Link-brand{
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
+  a{
+    color: rgb(165, 161, 161);
+   
   }
-
-
-
-  .Navbar__Link-toggle {
-    display: none;
+a:hover{
+    text-decoration: none;
+    color: black;
   }
-  
-  
-  .nav-list {
-    display: flex;
+  .nav-list li {
+    display: inline;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -44,23 +40,35 @@
    border-radius: 10px;
     display: none;
     position: absolute;
-    background-color: rgb(253, 252, 252);
+    width: 200px;
+    background-color:white;
+    box-shadow: 2px 5px 5px 3px rgba(217,215,215,0.75);
+-webkit-box-shadow: 2px 5px 5px 3px rgba(217,215,215,0.75);
+-moz-box-shadow: 2px 5px 5px 3px rgba(217,215,215,0.75);
     z-index: 1;
   }
-  
+  .dropdown-list li{
+    width: 100%;
+    margin:auto;
+  }
+  .dropdown-list li p{
+    margin: 30px;
+  }
   .dropdown:hover .dropdown-list {
     display: block;
   }
-  
 .NavTwo{
-    display: flex;
-    margin-left: auto;
-    align-items: center;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  margin-right: 20px;
+  display: block;
 }
 .Navbar__Link{
-    margin: auto 5px;
+  display: inline;
+    margin-top: 30px;
+    margin-right: 10px;
 }
-
 .Navbar__Link a{
 text-decoration: none;
 }
@@ -73,6 +81,11 @@ text-decoration: none;
     margin-right: 5px ;
 }
 
+@media only screen and (min-width: 768px){
+  .Navbar__Link-toggle{
+    display: none;
+   }
+}
 
 @media  only screen and (max-width:768px) {
     .navbar-items,
@@ -81,51 +94,48 @@ text-decoration: none;
         display: none;
     }
    .Navbar__Link-toggle{
-    display: initial;
+    display: block;
     cursor: pointer;
    }
- 
 }
 .mainPage{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
+  position: relative;
+    margin: 30px 120px 0px 120px;
     height: 70%;
 }
-.theme{
-    flex: 1;
-}
-.theme div{
-    flex: 1;
-}
-
-.sponsors div{
-    margin: 0px 10px;
-}
-.banner{
-flex: 1;
+.title{
+  font-size: 56px;
+  font-weight: bolder;
 }
 
 .sponsors{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  margin: 30px auto;
 }
 
+
+.sponsors div{
+  display: inline;
+  list-style: none;
+  margin: 0 20px;
+  padding: 0;
+}
+.banner{
+  position: absolute;
+  right: 0;
+  top: 0;
+float: right;
+}
 @media only screen  and (max-width:768px){
-    .mainPage{
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-    .sidenavbar{
-      display: none;
-    }
+  .mainPage .theme{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: 80vh;
+  }
+  body{
+    margin: auto 20px;
+  }
 }
-
-
-
  
   .sidenavbar {
     display: none;
@@ -141,8 +151,7 @@ flex: 1;
   }
   
   .sidemenuToggle{
-    display: flex;
-    /* flex-direction: column; */
+    display: block;
   }
 
   .sidenav-list .dropdown a {
@@ -174,10 +183,11 @@ flex: 1;
 }
 
 .SideNavTwo{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+ position: absolute;
+ top: 45px;
+ right: 0;
+ margin-right: 20px;
+ display: block;
 }
 
 .SideNavTwo .Navbar__Link{
@@ -193,40 +203,3 @@ flex: 1;
 .closemenu{
   display: none;
 }
-  /*
-  @media (max-width: 768px) {
-    .navbar-toggle {
-      display: block;
-    }
-  
-    .nav-list {
-      display: none;
-      flex-direction: column;
-      position: fixed;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background-color: #333;
-      padding: 10px;
-    }
-  
-    .nav-list li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  
-    .nav-list li:last-child {
-      margin-bottom: 0;
-    }
-  
-    .nav-list li a {
-      color: #fff;
-      text-decoration: none;
-    }
-  
-    .dropdown-list {
-      position: static;
-      display: block;
-      background-color: transparent;
-    }
-} */
